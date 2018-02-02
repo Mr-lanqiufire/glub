@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	table{
+		border:1px solid green;
+		border-collapse: collapse;
+	}
+	tr{
+		border:1px solid green;
+		height: 40px;
+	}
+	th{
+		border:1px solid green;
+		width: 100px;
+	}
+	td{
+		border: 1px solid green;
+		width: 100px;
+	}
+</style>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>姓名</th>
+				<th>年龄</th>
+				<th>性别</th>
+				<th>薪资</th>
+				<th>婚否</th>
+				<th>地址</th>
+			</tr>
+		</thead>
+		<tbody>
+			
+		</tbody>
+	</table>
+	<script>
+		var tbody=document.getElementsByTagName('tbody')[0];
+		for(var i=0;i<6;i++){
+			var tr=tbody.insertRow();
+			for(var j=0;j<6;j++){
+				tr.insertCell();
+			}
+		}
+	</script>
+</body>
+</html>

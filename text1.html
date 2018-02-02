@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		<i></i>
+		<p></p>
+	</div>
+	<script>
+		var div=document.getElementsByTagName('div')[0];
+		var p=document.getElementsByTagName('p')[0];
+		// div.removeChild(p);
+		p.cloneNode([true]);
+		// div.insertBefore(p,p)
+	</script>
+</body>
+</html>
